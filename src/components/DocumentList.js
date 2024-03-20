@@ -19,13 +19,19 @@ export default function DocumentList({
           ? "document-open"
           : "document-close"
       } depth-${curId}-${depth}" data-depth=${depth} data-document-id="${id}">
-          <div class="document-container">
-            <button class="document-view-button">></button>
+          <div class="document-container hover">
+            <button class="document-view-button"><span class="material-symbols-rounded">
+            chevron_right
+            </span></button>
             <div class="document-title"  >
               ${title}
             </div>
-            <button class="remove-button">삭제</button>
-            <button class="add-button">추가</button>
+            <button class="remove-button"><span class="material-symbols-rounded">
+            delete
+            </span></button>
+            <button class="add-button"><span class="material-symbols-rounded">
+            add
+            </span></button>
           </div>
       </div>
     `;
